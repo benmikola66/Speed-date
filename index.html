@@ -38,6 +38,20 @@
 	    font-size: .75rem;
 	    text-decoration: underline;}
 
+		.accordion-button:not(.collapsed){
+			color: #000000 !important;
+    		background-color: #8b969a38 !important;
+		}
+
+		.accordion-button:focus{
+			border-color: #FFFFFF !important;
+			box-shadow: none !important;
+		}
+
+		.accordion-button:not(.collapsed)::after{
+			background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+		}
+
       @media (min-width: 768px) {
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
@@ -49,8 +63,8 @@
     <!-- Custom styles for this template -->
   
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
-	 
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	  
 <!-- Facebook Pixel Code -->
 <script>
@@ -141,38 +155,100 @@
     
     
     <h2 class="container text-center">Frequently asked questions</h2>
-		
-		<p class="lead">How does it work?</p>
-		<p class="lead" name="click">Once everyone is seated, the host will ring a bell. Each date is six minutes long.
-			 After 5 minutes, there's a "warning" bell so you can wrap up your conversations. When the 6 minutes is up, you'll hear the bell again. 
-			That means it's time for the guys get up and move to the next table.</p>
-		
-		<p class="lead">Is there an age range?</p>
-		<p class="lead">Yes. This event is for ages 25 to 35.</p>
-		
-		<p class="lead">When should I get there?</p>
-		<p class="lead">Please arrive at 6:45pm. That gives everyone enough time to get their free drink and find their seat.
-		The event starts at exactly 7pm.</p>
-		
-		<p class="lead">What if I click with someone and want to go on another date with them?</p>
-		<p class="lead">After the event, we send you pictures of everyone you went on a date with. Reply with the names of who you want to
-		see again. If somebody liked you too, we'll send you their phone number. You take it from there!</p>
-		
-		<p class="lead">How do I refer friends to get my second free drink?</p>
-		<p class="lead">After you buy your ticket, you recieve a confirmation text. Reply to this text by saying, "My friend [John] referred me." Both of you
-		   will get two free drinks.</p>
-		
-		<p class="lead">What if I have a horrible time?</p>
-		<p class="lead">That would suck, and we would feel really bad. You'll get your money back immediately. You'll also get a $10 gift card to your 
-			favorite place to eat. All you have to do is text us and say, "I had a horrible time and want my money back please." Don't be shy.</p>
-		
-		<p class="lead">What if I can't hold a conversation for 6 minutes?</p>
-		<p class="lead">A lot of people worry about this, but then they always say the 6 minutes flew by. Either way, there will be fun
-			games and conversation starters at each table.</p>
-		
-		<p class="lead">What is Arrow?</p>
-		<p class="lead">Arrow is a speed dating company that runs events across Austin. We're still new, so we appreciate everyone who
-			       supports us! Tell your single friends! See more <a href="about.html">here</a>.</p>
+
+		<div class="accordion accordion-flush" id="faqList">
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="ques1">
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ans1" aria-expanded="false" aria-controls="ans1">
+					How does it work?
+				</button>
+				</h2>
+				<div id="ans1" class="accordion-collapse collapse" aria-labelledby="ques1" data-bs-parent="#faqList">
+				<div class="accordion-body">
+					Once everyone is seated, the host will ring a bell. Each date is six minutes long.
+				After 5 minutes, there's a "warning" bell so you can wrap up your conversations. When the 6 minutes is up, you'll hear the bell again. 
+				That means it's time for the guys get up and move to the next table.	
+				</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="ques2">
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ans2" aria-expanded="false" aria-controls="ans2">
+					Is there an age range?
+				</button>
+				</h2>
+				<div id="ans2" class="accordion-collapse collapse" aria-labelledby="ques2" data-bs-parent="#faqList">
+				<div class="accordion-body">
+					Yes. This event is for ages 25 to 35.	
+				</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="ques3">
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ans3" aria-expanded="false" aria-controls="ans3">
+					When should I get there?
+				</button>
+				</h2>
+				<div id="ans3" class="accordion-collapse collapse" aria-labelledby="ques3" data-bs-parent="#faqList">
+				<div class="accordion-body">
+					Please arrive at 6:45pm. That gives everyone enough time to get their free drink and find their seat.
+			The event starts at exactly 7pm.	
+				</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="ques4">
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ans4" aria-expanded="false" aria-controls="ans4">
+					What if I click with someone and want to go on another date with them?
+				</button>
+				</h2>
+				<div id="ans4" class="accordion-collapse collapse" aria-labelledby="ques4" data-bs-parent="#faqList">
+				<div class="accordion-body">
+					After the event, we send you pictures of everyone you went on a date with. Reply with the names of who you want to
+		see again. If somebody liked you too, we'll send you their phone number. You take it from there!	
+				</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="ques5">
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ans5" aria-expanded="false" aria-controls="ans5">
+					How do I refer friends to get my second free drink?
+				</button>
+				</h2>
+				<div id="ans5" class="accordion-collapse collapse" aria-labelledby="ques5" data-bs-parent="#faqList">
+				<div class="accordion-body">
+					After you buy your ticket, you recieve a confirmation text. Reply to this text by saying, "My friend [John] referred me." Both of you
+		   will get two free drinks.	
+				</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="ques6">
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ans6" aria-expanded="false" aria-controls="ans6">
+					What if I have a horrible time?
+				</button>
+				</h2>
+				<div id="ans6" class="accordion-collapse collapse" aria-labelledby="ques6" data-bs-parent="#faqList">
+				<div class="accordion-body">
+					A lot of people worry about this, but then they always say the 6 minutes flew by. Either way, there will be fun
+			games and conversation starters at each table.
+				</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="ques7">
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ans7" aria-expanded="false" aria-controls="ans7">
+					What is Arrow?
+				</button>
+				</h2>
+				<div id="ans7" class="accordion-collapse collapse" aria-labelledby="ques7" data-bs-parent="#faqList">
+				<div class="accordion-body">
+					Arrow is a speed dating company that runs events across Austin. We're still new, so we appreciate everyone who
+			       supports us! Tell your single friends! See more <a href="about.html">here</a>.
+				</div>
+				</div>
+			</div>
+		</div>
 
 	</container>
 
@@ -182,11 +258,9 @@
 	    <form enctype="multipart/form-data" action="thankyou.html" id="reg-form" method="POST" name="submission" data-netlify="true">
 	      <div class="modal-header">
 	        <h5 class="modal-title" id="exampleModalLabel">Register</h5>
-	        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-          		<span aria-hidden="true">&times;</span>
-	        </button>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 	      </div>
-	      <div class="modal-body text-left">
+	      <div class="modal-body text-start">
 	        
 	        	<div id="reg-form-div" class="row">
     				<div class="col-sm">
@@ -195,13 +269,13 @@
 						    <input type="text" required="required" name="name" class="form-control" id="name">
 						</div>
 						<div class="mb-3">
-						    <label for="Phone" class="form-label">Phone Number &nbsp;&nbsp;</label><span class="smallp">Why do we need a phone number?</span>
+						    <label for="Phone" class="form-label">Phone Number &nbsp;&nbsp;</label><small class="smallp" data-bs-toggle="tooltip" data-bs-placement="right" title="So we can contact you later after the event">Why do we need a phone number?</small>
 						    <input type="text" required="required" name="phone" class="form-control" id="phone">
 						</div>
 						<div class="mb-3">
 							<div class="row">
 								<div class="col-sm-8">
-									<label for="Photo" class="form-label">Upload Photo &nbsp;&nbsp;</label><span class="smallp">Why do we need a photo?</span>
+									<label for="Photo" class="form-label">Upload Photo &nbsp;&nbsp;</label><small class="smallp" data-bs-toggle="tooltip" data-bs-placement="right" title="We use that to indentify you on the event day">Why do we need a photo?</small>
 						    		<input type="file" required="required" name="photo" class="form-control" id="photo">
 								</div>
 								<div class="col-sm-4 col-6 offset-3 offset-sm-0 pt-3 pt-sm-0">
@@ -226,7 +300,7 @@
     <!--<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>-->
     <!-- CSS only -->
 <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 <script
 			  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -234,6 +308,11 @@
 			  crossorigin="anonymous"></script>
 
 <script src="js/script.js"></script>
-      
+<script>
+	var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+</script>      
   </body>
 </html>

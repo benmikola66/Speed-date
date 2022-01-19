@@ -13,7 +13,7 @@
     
 
     <!-- Bootstrap core CSS -->
-<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet"> -->
 
     <style>
       .bd-placeholder-img {
@@ -51,6 +51,52 @@
 			box-shadow: none !important;
 		}
 
+    .red{
+	    background-color: white !important;
+	    color: red !important;
+	     padding: 1.1rem 2.1rem !important;
+	    font-size: 2rem !important}  
+	    
+	      .red2{
+	    background-color: white !important;
+	    color: red !important;
+		      margin-bottom: .5rem;}
+
+          input.form-control{
+			border: 1px solid #ffffff;
+			
+		}
+
+    a.red{
+	    background-color: white !important;}
+
+    .smallp{
+	    font-size: .75rem;
+	    text-decoration: underline;}
+
+    .modal-content{
+			background-color: pink !important;
+		}
+
+      /* POPup Close button*/
+		.btn-close{
+			background:transparent url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'><path d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/></svg>") !important;
+			padding: .25em .25em !important;
+		}
+
+		/* popup */
+		.modal-content{
+			border: 3px solid #ffffff !important;
+		}
+
+		.tooltip-inner{
+			background-color: #f8f4f4 !important;
+		}
+
+		.bs-tooltip-auto[data-popper-placement^=right] .tooltip-arrow::before, .bs-tooltip-end .tooltip-arrow::before{
+			border-right-color: #f8f4f4 !important;
+		}
+
       @media (min-width: 768px) {
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
@@ -58,6 +104,8 @@
       }
     </style>
 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	  
     
     <!-- Custom styles for this template -->
     
@@ -138,7 +186,48 @@
 			
 		</div>
 	   
-  
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <form enctype="multipart/form-data" action="thankyou.html" id="reg-form" method="POST" name="submission" data-netlify="true">
+          <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Get your seat on February 14th at Bouldin Acres</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-start">
+            
+              <div id="reg-form-div" class="row">
+              <div class="col-sm">
+                  <div class="mb-3">
+              <label for="Name" class="form-label">Name</label><span>
+                  <input type="text" required="required" name="name" class="form-control" id="name">
+              </div>
+              <div class="mb-3">
+                  <label for="Phone" class="form-label">Phone Number &nbsp;&nbsp;</label><small class="smallp" data-bs-toggle="tooltip" data-bs-placement="right" title="To communicate and to share with your matches. No spam ever.">Why do we need a phone number?</small>
+                  <input type="text" required="required" name="phone" class="form-control" id="phone">
+              </div>
+              <div class="mb-3">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <label for="Photo" class="form-label">Upload Photo &nbsp;&nbsp;</label><small class="smallp" data-bs-toggle="tooltip" data-bs-placement="right" title="After the event, we send you everyone's photos so you can choose who you want to see again.">Why do we need a photo?</small>
+                      <input type="file" required="required" name="photo" class="form-control" id="photo">
+                  </div>
+                  <div class="col-sm-4 col-6 offset-3 offset-sm-0 pt-3 pt-sm-0">
+                    <img id="img-preview" src="images/avatar.png" class="img-thumbnail">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button id="btn-submit" type="submit" class="btn red btn-lg btn-light">Reserve your seat</button>
+          </div>
+        </form> 
+        </div>
+      </div>
+    </div>
   </container>
 
     
@@ -154,7 +243,18 @@
 
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<script
+			  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			  integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+			  crossorigin="anonymous"></script>
 
+<script src="js/script.js"></script>
+<script>
+	var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+</script>
       
   </body>
 </html>

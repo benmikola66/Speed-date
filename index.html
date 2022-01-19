@@ -193,6 +193,19 @@
 			box-shadow: none !important;
 		}
 
+		.featured-img{
+			background: #fff;
+			border-radius: 2rem;
+			margin-bottom: 1rem;
+		}
+
+		.featured-content{
+			background-color: rgb(245, 175, 186);
+			padding: 1rem;
+			margin-bottom: 1rem;
+			min-height: 13.5rem;
+		}
+
       @media (min-width: 768px) {
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
@@ -234,7 +247,7 @@
     
 <nav class="navbar navbar-expand-md fixed-top navbar-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Arrow Dates</a>
+    <a class="navbar-brand" href="#"><img width="50px" src="images/logo.png"/> Arrow Dates</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
       <span class="white navbar-toggler-icon"></span>
     </button>
@@ -260,23 +273,52 @@
 <main class="container text-center">
 
 
-  <h1 class ="first-header">Meet more people in less time. And have fun while you do it.</h1>
+  	<h1 class ="first-header">Meet more people in less time. And have fun while you do it.</h1>
     <h3 class="second-header">Go on 10 dates in one hour.</h3>
 	
 	
     <p class="lead">
       <a href="#" data-bs-toggle="modal" data-bs-target="#registerModal" class="btn big red btn-secondary fw-bold border-white">Reserve your seat</a>
     </p>
+
+	<section class="mt-5">
+		<div class="row">
+			<div class="col-12 col-sm-4">
+				<div class="featured-img">
+					<img src="images/feature-1.jpeg" class="img-fluid" />
+				</div>
+				<div class="featured-content">
+					<h2 class="jon">No more dating apps</h2>
+					<p class="lead">Dating apps are a lot of time and effort, with no results. Arrow lets you meet people face to face, 
+						so you can vet them yourself before committing to a longer date.</p>
+				</div>
+			</div>
+			<div class="col-12 col-sm-4">
+				<div class="featured-img">
+					<img src="images/feature-2.jpeg" class="img-fluid"  />
+				</div>
+				<div class="featured-content">
+					<h2 class="jon">Date faster</h2>
+					<p class="lead">The single life can be fun. But if you wait too long, you run out of options. Meet more people in less time with Arrow. </p>
+				</div>
+			</div>
+			<div class="col-12 col-sm-4">
+				<div class="featured-img">
+					<img src="images/feature-3.jpeg" class="img-fluid"  />
+				</div>
+				<div class="featured-content">
+					<h2 class="jon">Have fun</h2>
+					<p class="lead">Everyone gets at least one free drink. Bring a friend and you get two. Plus there's games and prizes. And who doesn't like games
+		and prizes?</p>
+				</div>
+			</div>
+		</div>
+	</section>
 	
 	<!--<h4 class="third-header">There are only 20 seats available.</h4>-->
 
-    
-
-	<div class="headimage></div>
-   
-	<container class="left">
-		
-<div class="dif1">
+<!-- <div class="dif1">
+	<img src="images/feature-1.jpeg">
     <h2 class="jon">No more dating apps</h2>
     <p class="lead">Dating apps are a lot of time and effort, with no results. Arrow lets you meet people face to face, 
 	    so you can vet them yourself before committing to a longer date.</p>
@@ -285,7 +327,7 @@
 		   
 <!--<div class="headimage></div>-->
 		
-<div class="dif2">
+<!-- <div class="dif2">
 		
     <h2 class="jon">Date faster</h2>
     <p class="lead">The single life can be fun. But if you wait too long, you run out of options. Meet more people in less time with Arrow. </p>
@@ -293,125 +335,122 @@
 	
 <!--<div class="headimage></div>-->	
     
-<div class="dif3">		
+<!-- <div class="dif3">		
     <h2 class="jon">Have fun</h2>
     <p class="lead">Everyone gets at least one free drink. Bring a friend and you get two. Plus there's games and prizes. And who doesn't like games
 		and prizes?</p>
 </div>   
+-->
 		
-		<div class="container text-center">
-			
+	<div class="container text-center mt-4">
+		
 		<p class="lead">There's only 20 seats for this event. Ten for men. Ten for women. 
+	
+		<p class="lead">
+			<a href="#" data-bs-toggle="modal" data-bs-target="#registerModal" class="btn btn-lg red2 btn-secondary fw-bold border-white">Get your seat now</a>
+		</p>
 		
-		  <p class="lead">
-      <a href="#" data-bs-toggle="modal" data-bs-target="#registerModal" class="btn btn-lg red2 btn-secondary fw-bold border-white">Get your seat now</a>
-    </p>
-			
-		</div>
+	</div>
 																   
 																   
 <!--<div class="headimage></div>-->																   
 																   
     
-    <h2 class="container marginf text-center">Frequently asked questions</h2>
-	
-		</div>
+    <h2 class="marginf text-center">Frequently asked questions</h2>
 
-		<div class="accordion accordion-flush" id="faqList">
-			<div class="accordion-item">
-				<h2 class="accordion-header" id="ques1">
-				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ans1" aria-expanded="false" aria-controls="ans1">
-					How does it work?
-				</button>
-				</h2>
-				<div id="ans1" class="accordion-collapse collapse" aria-labelledby="ques1" data-bs-parent="#faqList">
-				<div class="accordion-body">
-					Once everyone is seated, the host will ring a bell. Each date is six minutes long.
-				After 5 minutes, there's a "warning" bell so you can wrap up your conversations. When the 6 minutes is up, you'll hear the bell again. 
-				That means it's time for the guys get up and move to the next table.	
-				</div>
-				</div>
+	<div class="accordion accordion-flush" id="faqList">
+		<div class="accordion-item">
+			<h2 class="accordion-header" id="ques1">
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ans1" aria-expanded="false" aria-controls="ans1">
+				How does it work?
+			</button>
+			</h2>
+			<div id="ans1" class="accordion-collapse collapse" aria-labelledby="ques1" data-bs-parent="#faqList">
+			<div class="accordion-body">
+				Once everyone is seated, the host will ring a bell. Each date is six minutes long.
+			After 5 minutes, there's a "warning" bell so you can wrap up your conversations. When the 6 minutes is up, you'll hear the bell again. 
+			That means it's time for the guys get up and move to the next table.	
 			</div>
-			<div class="accordion-item">
-				<h2 class="accordion-header" id="ques2">
-				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ans2" aria-expanded="false" aria-controls="ans2">
-					Is there an age range?
-				</button>
-				</h2>
-				<div id="ans2" class="accordion-collapse collapse" aria-labelledby="ques2" data-bs-parent="#faqList">
-				<div class="accordion-body">
-					Yes. This event is for ages 25 to 35.	
-				</div>
-				</div>
-			</div>
-			<div class="accordion-item">
-				<h2 class="accordion-header" id="ques3">
-				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ans3" aria-expanded="false" aria-controls="ans3">
-					When should I get there?
-				</button>
-				</h2>
-				<div id="ans3" class="accordion-collapse collapse" aria-labelledby="ques3" data-bs-parent="#faqList">
-				<div class="accordion-body">
-					Please arrive at 6:45pm. That gives everyone enough time to get their free drink and find their seat.
-			The event starts at exactly 7pm.	
-				</div>
-				</div>
-			</div>
-			<div class="accordion-item">
-				<h2 class="accordion-header" id="ques4">
-				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ans4" aria-expanded="false" aria-controls="ans4">
-					What if I click with someone and want to go on another date with them?
-				</button>
-				</h2>
-				<div id="ans4" class="accordion-collapse collapse" aria-labelledby="ques4" data-bs-parent="#faqList">
-				<div class="accordion-body">
-					After the event, we send you pictures of everyone you went on a date with. Reply with the names of who you want to
-		see again. If somebody liked you too, we'll send you their phone number. You take it from there!	
-				</div>
-				</div>
-			</div>
-			<div class="accordion-item">
-				<h2 class="accordion-header" id="ques5">
-				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ans5" aria-expanded="false" aria-controls="ans5">
-					How do I refer friends to get my second free drink?
-				</button>
-				</h2>
-				<div id="ans5" class="accordion-collapse collapse" aria-labelledby="ques5" data-bs-parent="#faqList">
-				<div class="accordion-body">
-					After you buy your ticket, you recieve a confirmation text. Reply to this text by saying, "My friend [John] referred me." Both of you
-		   will get two free drinks.	
-				</div>
-				</div>
-			</div>
-			<div class="accordion-item">
-				<h2 class="accordion-header" id="ques6">
-				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ans6" aria-expanded="false" aria-controls="ans6">
-					What if I have a horrible time?
-				</button>
-				</h2>
-				<div id="ans6" class="accordion-collapse collapse" aria-labelledby="ques6" data-bs-parent="#faqList">
-				<div class="accordion-body">
-					A lot of people worry about this, but then they always say the 6 minutes flew by. Either way, there will be fun
-			games and conversation starters at each table.
-				</div>
-				</div>
-			</div>
-			<div class="accordion-item">
-				<h2 class="accordion-header" id="ques7">
-				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ans7" aria-expanded="false" aria-controls="ans7">
-					What is Arrow?
-				</button>
-				</h2>
-				<div id="ans7" class="accordion-collapse collapse" aria-labelledby="ques7" data-bs-parent="#faqList">
-				<div class="accordion-body">
-					Arrow is a speed dating company that runs events across Austin. We're still new, so we appreciate everyone who
-			       supports us! Tell your single friends! See more <a href="about.html">here</a>.
-				</div>
-				</div>
 			</div>
 		</div>
-
-	</container>
+		<div class="accordion-item">
+			<h2 class="accordion-header" id="ques2">
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ans2" aria-expanded="false" aria-controls="ans2">
+				Is there an age range?
+			</button>
+			</h2>
+			<div id="ans2" class="accordion-collapse collapse" aria-labelledby="ques2" data-bs-parent="#faqList">
+			<div class="accordion-body">
+				Yes. This event is for ages 25 to 35.	
+			</div>
+			</div>
+		</div>
+		<div class="accordion-item">
+			<h2 class="accordion-header" id="ques3">
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ans3" aria-expanded="false" aria-controls="ans3">
+				When should I get there?
+			</button>
+			</h2>
+			<div id="ans3" class="accordion-collapse collapse" aria-labelledby="ques3" data-bs-parent="#faqList">
+			<div class="accordion-body">
+				Please arrive at 6:45pm. That gives everyone enough time to get their free drink and find their seat.
+		The event starts at exactly 7pm.	
+			</div>
+			</div>
+		</div>
+		<div class="accordion-item">
+			<h2 class="accordion-header" id="ques4">
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ans4" aria-expanded="false" aria-controls="ans4">
+				What if I click with someone and want to go on another date with them?
+			</button>
+			</h2>
+			<div id="ans4" class="accordion-collapse collapse" aria-labelledby="ques4" data-bs-parent="#faqList">
+			<div class="accordion-body">
+				After the event, we send you pictures of everyone you went on a date with. Reply with the names of who you want to
+	see again. If somebody liked you too, we'll send you their phone number. You take it from there!	
+			</div>
+			</div>
+		</div>
+		<div class="accordion-item">
+			<h2 class="accordion-header" id="ques5">
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ans5" aria-expanded="false" aria-controls="ans5">
+				How do I refer friends to get my second free drink?
+			</button>
+			</h2>
+			<div id="ans5" class="accordion-collapse collapse" aria-labelledby="ques5" data-bs-parent="#faqList">
+			<div class="accordion-body">
+				After you buy your ticket, you recieve a confirmation text. Reply to this text by saying, "My friend [John] referred me." Both of you
+		will get two free drinks.	
+			</div>
+			</div>
+		</div>
+		<div class="accordion-item">
+			<h2 class="accordion-header" id="ques6">
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ans6" aria-expanded="false" aria-controls="ans6">
+				What if I have a horrible time?
+			</button>
+			</h2>
+			<div id="ans6" class="accordion-collapse collapse" aria-labelledby="ques6" data-bs-parent="#faqList">
+			<div class="accordion-body">
+				A lot of people worry about this, but then they always say the 6 minutes flew by. Either way, there will be fun
+		games and conversation starters at each table.
+			</div>
+			</div>
+		</div>
+		<div class="accordion-item">
+			<h2 class="accordion-header" id="ques7">
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ans7" aria-expanded="false" aria-controls="ans7">
+				What is Arrow?
+			</button>
+			</h2>
+			<div id="ans7" class="accordion-collapse collapse" aria-labelledby="ques7" data-bs-parent="#faqList">
+			<div class="accordion-body">
+				Arrow is a speed dating company that runs events across Austin. We're still new, so we appreciate everyone who
+				supports us! Tell your single friends! See more <a href="about.html">here</a>.
+			</div>
+			</div>
+		</div>
+	</div>
 
     <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
 	  <div class="modal-dialog modal-dialog-centered">
@@ -455,6 +494,7 @@
 	    </div>
 	  </div>
 	</div>
+
 </main><!-- /.container -->
 
 
